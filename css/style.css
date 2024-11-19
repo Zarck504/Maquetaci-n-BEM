@@ -1,0 +1,1051 @@
+:root {
+    --textoNegrita: 700;
+    --textoNormal: 400;
+    --textoThin: 100;
+    --bgPrincipal: #fbfaff;
+    --bgSecundario: #eae8f3;
+    --bgBannerSecundario: #ebdefe;
+    --bgBtnPrincipal: #2623b1;
+
+    --color_titulo: #403ccf;
+    --color_principal: #49495a;
+    --fuente_principal: 'Montserrat', sans-serif;
+    --tamano_texto: 20px;
+    --tamano_titulos: 60px;
+    --tamano_subtitulos: 2rem;
+}
+
+body {
+    width: 100%;
+    font-family: var(--fuente_principal);
+}
+
+
+.header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    background-color: var(--bgPrincipal);
+    padding-bottom: 7rem;
+    background-color: white;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+
+.header__image {
+    height: 650px;
+    width: 420px;
+    padding-top: 2rem;
+}
+
+.titulo1 {
+    color: var(--color_titulo);
+    font-family: var(--fuente_principal);
+    font-size: var(--tamano_titulos);
+    font-weight: var(--textoNegrita);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.header__description {
+    color: var(--color_principal);
+    font-size: 1.5rem;
+    font-weight: var(--textoNormal);
+}
+
+
+
+.nosotros {
+    margin-top: 2em;
+    background-color: var(--bgPrincipal);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 11rem;
+    background-color: white;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+
+.nosotrostitulo {
+    grid-column: 1/1;
+    color: var(--color_titulo);
+    font-size: var(--tamano_titulos);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.nosotrossub {
+    color: var(--color_titulo);
+    font-size: var(--tamano_subtitulos);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.nosotros__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
+    color: var(--color_titulo);
+    font-size: var(--tamano_subtitulos);
+}
+
+.nosotros__content {
+    gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
+    font-size: var(--tamano_texto);
+}
+
+
+
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 2em;
+    background-color: var(--bgPrincipal);
+    align-items: center;
+    background-color: white;
+}
+
+.menu>.menu__nav {
+    grid-column: 1/5;
+}
+
+.menu>.imagen {
+    grid-column: 5/-1;
+}
+
+.menu__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin: 5em;
+    margin-top: 0;
+    
+}
+
+.menu__nav>h1 {
+    grid-column: 1/-1;
+    color: var(--color_titulo);
+    font-size: var(--tamano_subtitulos);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px
+}
+
+.menu__nav>h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.menutext {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+.menu__nav>div {
+    color: var(--color_principal);
+    font-size: var(--tamano_texto);
+    background-color: var(--bgSecundario);
+    padding: 1em;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.menu__nav>.fin {
+    grid-column: 1/-1;
+}
+
+.imagen {
+    display: flex;
+    justify-content: end;
+}
+
+.imagen_hamburger {
+    height: 750px;
+    width: 500px
+}
+
+
+
+.ambiente {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 2em;
+    background-color: var(--bgPrincipal);
+    align-items: center;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+    padding-top: 4rem;
+}
+
+.ambiente>.ambiente__nav {
+    grid-column: 1/5;
+}
+
+.ambiente>.imagen {
+    grid-column: 5/-1;
+    margin: 2em;
+}
+
+.ambiente__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    margin: 5em;
+    margin-top: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.ambiente__nav>h1 {
+    grid-column: 1/-1;
+    color: var(--color_titulo);
+    font-size: var(--tamano_subtitulos);
+    
+}
+
+.ambiente__nav>div {
+    color: var(--color_principal);
+    font-size: var(--tamano_texto);
+}
+
+.ambiente__nav>div>img {
+    width: 40px;
+    height: 40px;
+}
+
+.imagen {
+    display: flex;
+    justify-content: end;
+    ;
+}
+
+.imagen_ambiente {
+    height: 550px;
+    width: 400px
+}
+
+
+.info {
+    margin-top: 2em;
+    background-color: white;
+    padding-top: 4rem;
+}
+
+.ubicacion_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    opacity: 1;
+    background-image: repeating-linear-gradient(45deg, #EBDCE6 25%, transparent 25%, transparent 75%, #EBDCE6 75%, #EBDCE6), repeating-linear-gradient(45deg, #EBE1EB 25%, #EBDCE6 25%, #EBDCE6 75%, #EBE1EB 75%, #EBE1EB);
+    background-position: 0 0, 16px 16px;
+    background-size: 32px 32px;
+}
+
+.ubicacion_header>img {
+    width: 130px;
+    height: 140px;
+}
+
+.info>h2 {
+    font-size: var(--tamano_titulos);
+    color: var(--color_titulo);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+    padding-left: 3rem;
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    padding: 40px 0;
+}
+
+.info-container::before {
+    content: '';
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    right: 50px;
+    height: 1px;
+    background-color: var(--color_principal);
+    z-index: 1;
+}
+
+.info-content {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.info-box {
+    text-align: center;
+    width: 30%;
+    position: relative;
+    z-index: 2;
+}
+
+.icon-number {
+    font-size: 50px;
+    font-weight: 400;
+    background-color: var(--bgSecundario);
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+
+.icon-number::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: var(--color_principal);
+}
+
+h3 {
+    font-size: var(--tamano_subtitulos);
+    margin-top: 10%;
+    color: var(--color_principal);
+    font-weight: bold;
+}
+
+p {
+    font-size: var(--tamano_texto);
+    color: var(--color_principal);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+
+
+.promotions {
+    margin-top: 2em;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-bottom: 3rem;
+}
+
+
+.promotions__content {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotions__title {
+    font-size: 5rem;
+    color: var(--color_titulo);
+    margin-bottom: 1.5rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.promotions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.promotion-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.promotion-item__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--tamano_subtitulos);
+    font-weight: bold;
+    color: black;
+    background-color: var(--bgSecundario);
+    padding: 2rem;
+    position: relative;
+    width: 1fr;
+    height: 100px;
+    margin: 0 auto;
+    clip-path: polygon(50% 20%, 100% 0%, 100% 80%, 50% 100%, 0% 80%, 0% 0%);
+}
+
+.promotion-item__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion-item__title {
+    font-size: 1.25rem;
+
+    margin: 0;
+    color: var(--color_principal);
+}
+
+.promotion-item__description {
+    margin: 0.5rem 0 0;
+    color: var(--color_principal);
+}
+
+.promotions__image img {
+    width: 100%;
+    border-radius: 8px;
+    padding-top: 4rem;
+}
+
+
+
+
+.beneficios {
+    margin-top: 2em;
+    background-color: white;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.beneficios__content {
+    grid-column: 1/3;
+    align-items: start;
+}
+
+.beneficios__title {
+    font-size: 60px;
+    color: var(--color_titulo);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.beneficios-item__title {
+    font-size: var(--tamano_subtitulos);
+    color: var(--color_principal);
+}
+
+.beneficios-item__description {
+    font-size: var(--tamano_texto);
+    color: var(--color_principal);
+}
+
+.beneficios-item__content {
+
+    align-items: start;
+
+}
+
+.beneficios-item__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--tamano_subtitulos);
+    background-color: var(--bgSecundario);
+    font-weight: bold;
+    padding: 1rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.beneficios__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.beneficios-item1 {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.beneficios-item2 {
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.beneficios-item3 {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.beneficios_image {
+    height: 700px;
+    width: 500px;
+    padding-left: 2rem;
+}
+
+
+
+
+
+.testimonios {
+    margin-top: 2em;
+    background-color: white;
+    padding: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.testimonios>h2 {
+    font-size: 70px;
+    color: var(--color_titulo);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.testimonios__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonios_item>h4 {
+    font-size: 35px;
+    color: var(--color_titulo);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.testimonios_item>p {
+    font-size: var(--tamano_texto);
+    color: var(--color_principal);
+}
+
+
+
+
+.proximos_pasos {
+    margin-top: 2em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.text-section h2 {
+    font-size: 4rem;
+    color: var(--color_titulo);
+    margin-bottom: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.text-section p {
+    color: var(--color_principal);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #2A26B6, #5955EB);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+    width: 190px;
+    height: 30px;
+}
+
+.buttons a:hover {
+    background: linear-gradient(90deg, #6a5de0, #4a44d1);
+}
+
+.image-section {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+.Contacto {
+    margin-top: 2em;
+    background-color: white;
+}
+
+.contacto_content>h2 {
+    font-size: 50px;
+    color: var(--color_titulo);
+    grid-column: 1/-1;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.Contacto__image {
+    height: 200px;
+    background-image: url(../assets/img/contactoban.png);
+}
+
+.contacto_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+    gap: 20px;
+}
+
+.contacto_item {
+    height: auto;
+    background-color: var(--bgSecundario);
+    padding-left: 20px;
+}
+
+.contacto_item>h4 {
+    font-size: 40px;
+    color: var(--color_principal);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.contacto_item>p {
+    font-size: var(--tamano_texto);
+    color: var(--color_principal)
+}
+
+
+
+
+
+/* :::::: CSS RESPONSIVO :::::: */
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__nav {
+        margin-left: 0;
+    }
+
+    .header__image {
+        height: auto;
+        width: 100%;
+    }
+
+    .header__title {
+        font-size: 2rem;
+    }
+
+    .header__description {
+        font-size: 1.2rem;
+    }
+
+    /* Nosotros */
+    .nosotros {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros__title,
+    .nosotros__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .nosotros__content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menú */
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu>.menu__nav {
+        margin: 1em;
+        grid-template-columns: 1fr;
+    }
+
+    .menu>.imagen {
+        justify-content: center;
+    }
+
+    /* Ambiente */
+    .ambiente {
+        grid-template-columns: 1fr;
+    }
+
+    .ambiente>.ambiente__nav {
+        margin: 1em;
+        grid-template-columns: 1fr;
+    }
+
+    .ambiente>.imagen {
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Información */
+    .info-container {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .info-box {
+        width: 80%;
+    }
+
+    .icon-number {
+        font-size: 1.2rem;
+    }
+
+    /* Promociones */
+    .promotions {
+        grid-template-columns: 1fr;
+    }
+
+    .promotions__content {
+        align-items: center;
+    }
+
+    .promotion-item__number {
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+    /* Beneficios */
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios__list {
+        grid-template-columns: 1fr;
+    }
+    .Contacto {
+        padding: 2em 1em;
+    }
+    
+    .contacto_content {
+        grid-template-columns: 1fr;
+        /* Cambiamos a una columna */
+        gap: 1.5em;
+        /* Añadimos un espacio entre los elementos */
+    }
+    
+    .contacto_item {
+        padding: 1em;
+        /* Reducimos el padding */
+    }
+    
+    .Contacto__image {
+        height: 150px;
+        /* Ajustamos la altura */
+        background-size: cover;
+        background-position: center;
+    }
+    .proximos_pasos {
+        flex-direction: column; /* Alineamos los elementos en columna */
+        text-align: center;
+        padding: 1.5em;
+    }
+    
+    .text-section,
+    .image-section {
+        max-width: 100%; /* Ajustamos el ancho al 100% */
+        padding: 0;
+    }
+    
+    .text-section {
+        margin-bottom: 1.5em; /* Añadimos espacio entre las secciones */
+    }
+    
+    .text-section h2 {
+        font-size: 1.8rem; /* Ajustamos el tamaño del título */
+    }
+    
+    .text-section p {
+        font-size: 1rem; /* Ajustamos el tamaño del texto */
+    }
+    
+    .buttons a {
+        font-size: 0.9rem; /* Reducimos el tamaño de los botones */
+        padding: 0.8em 1.2em; /* Ajustamos el padding */
+    }
+    
+    .image-section img {
+        max-width: 90%; /* Reducimos el tamaño de la imagen */
+        border-radius: 8px; /* Mantenemos bordes redondeados */
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    /* Ajustes adicionales para pantallas más pequeñas */
+
+    /* Header */
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .header__description {
+        font-size: 1rem;
+    }
+
+    /* Nosotros */
+    .nosotros__title {
+        font-size: 1.5rem;
+    }
+
+    .nosotros__content {
+        font-size: 1rem;
+    }
+
+    /* Menu */
+    .menu>.menu__nav {
+        gap: 0.5em;
+    }
+
+    /* Ambiente */
+    .ambiente__nav>h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Información */
+    .info-box {
+        width: 100%;
+    }
+
+    .icon-number {
+        font-size: 1rem;
+    }
+
+    /* Promociones */
+    .promotion-item__number {
+        font-size: 1.2rem;
+    }
+
+    /* Beneficios */
+    .beneficios__title {
+        font-size: 1.2rem;
+    }
+
+    .contacto_content {
+        gap: 1em;
+        /* Reducimos el espacio entre elementos */
+    }
+
+    .contacto_item h4 {
+        font-size: 1rem;
+        /* Reducimos el tamaño del texto */
+    }
+
+    .contacto_item p {
+        font-size: 0.9rem;
+        /* Reducimos el tamaño del texto */
+    }
+
+    .text-section h2 {
+        font-size: 1.5rem;
+        /* Ajustamos el tamaño del título */
+    }
+
+    .text-section p {
+        font-size: 0.9rem;
+        /* Reducimos el texto */
+    }
+
+    .buttons a {
+        font-size: 0.8rem;
+        padding: 0.6em 1em;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        /* Imagen más pequeña pero sin desbordar */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para móviles */
+
+    /* Header */
+    .header {
+        padding: 1em;
+    }
+
+    .header__image {
+        width: 100%;
+    }
+
+    .header__title {
+        font-size: 1.2rem;
+    }
+
+    .header__description {
+        font-size: 1rem;
+    }
+
+    /* Nosotros */
+    .nosotros__content {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros__subtitle {
+        font-size: 1rem;
+    }
+
+    /* Menú */
+    .menu__nav {
+        margin: 0;
+    }
+
+    /* Información */
+    .info-container {
+        padding: 1em;
+    }
+
+    .icon-number {
+        font-size: 0.9rem;
+    }
+
+    /* Promociones */
+    .promotions {
+        padding: 1rem;
+    }
+
+    .promotion-item__number {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    /* Beneficios */
+    .beneficios {
+        padding: 1rem;
+    }
+
+    .beneficios-item__number {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    /* Testimonios */
+    .testimonios__content {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto_content {
+        padding: 1em;
+        /* Reducimos el padding general */
+    }
+
+    .contacto_item {
+        padding: 0.5em;
+        /* Reducimos aún más el padding */
+    }
+
+    .contacto_item h4 {
+        font-size: 0.9rem;
+    }
+
+    .contacto_item p {
+        font-size: 0.8rem;
+    }
+
+    .proximos_pasos {
+        padding: 1em;
+        /* Reducimos el padding general */
+    }
+
+    .text-section h2 {
+        font-size: 1.2rem;
+        /* Título más pequeño */
+    }
+
+    .text-section p {
+        font-size: 0.8rem;
+        /* Texto más compacto */
+    }
+
+    .buttons a {
+        font-size: 0.7rem;
+        padding: 0.5em 0.8em;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        border-radius: 6px;
+        /* Ajustamos los bordes */
+    }
+}
